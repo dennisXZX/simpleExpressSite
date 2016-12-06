@@ -1,0 +1,28 @@
+#nav {
+    background-color: lightblue;
+    font-size: 25px;
+    list-style-type: none;
+    padding: 25px 0;
+    width: 100%;
+}
+
+#nav li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.container {
+    background-color: lightskyblue;
+}
+
+#contact-form .row{
+    margin-top: 15px;
+}
+
+table {
+    margin: 0px auto;
+}
+
+table tr td {
+    padding: 10px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>     
+    <% include partials/headerFiles.ejs %>      
+    <title>Contact</title>
+</head>
+<body class="text-center">
+
+    <% include partials/nav.ejs %>
+
+    <h1>Feel free to contact me</h1>
+    <form id='contact-form' method='POST' action="/contact">
+        <div class="row">
+            <div class="col-md-6 text-right">
+                <label>What's your name?</label>
+            </div>
+            <div class="col-md-6 text-left">
+                <input type="text" name="name">
+            </div>            
+        </div>        
+        <div class="row">
+            <div class="col-md-6 text-right">
+                <label>What's your question?</label>
+            </div>
+            <div class="col-md-6 text-left">
+                <textarea type="text" name="question" rows="7" cols="50"></textarea>
+            </div>            
+        </div>      
+        <div class="row">
+            <div class="col-md-6 text-right">
+            </div>
+            <div class="col-md-6 text-left">
+                <input type="submit" name="submit" value="submit">
+            </div>            
+        </div>           
+    </form>
+
+    <% include partials/footerFiles.ejs %>       
+</body>
+</html>

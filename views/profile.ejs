@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/headerFiles.ejs %>      
+    <title>Profile</title>
+</head>
+<body class="text-center">
+    <% include partials/nav.ejs %>
+
+    <h1>Welcome to the profile of <%= person.name %></h1>
+    <p><strong><%= person.name %></strong> is now <strong><%= person.age %></strong> , who is working as a <strong><%= person.job %></strong> in Sydney.</p>
+    <h2>Hobbies</h2>
+    <table border="1">
+        <% for(let i=0; i<person.hobby.length; i++){ %>
+            <tr><td><%= person.hobby[i] %></td</tr>
+        <% } %>
+    </table>
+
+    <% include partials/footerFiles.ejs %>        
+</body>
+</html>

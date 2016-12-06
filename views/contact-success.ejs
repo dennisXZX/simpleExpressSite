@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <% include partials/headerFiles.ejs %>      
+    <title>Thank you for your email</title>
+</head>
+
+<% include partials/nav.ejs %>
+
+<body class="text-center">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Thank you for your email</h1>
+            <h2>Hi <%= formData.name %>, I will reply your question ASAP!</h2>
+        </div>
+    </div>
+
+    <% include partials/footerFiles.ejs %>       
+</body>
+</html>
